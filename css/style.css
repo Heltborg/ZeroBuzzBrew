@@ -109,6 +109,51 @@ h1 {
   font-weight: 600;
 }
 
+/* -- selve scrolleren -- */
+.scroller {
+  display: flex;
+  gap: 10rem; /* -- afstand mellem billederne -- */
+  margin: 2rem 0rem;
+  overflow-x: auto; /* -- muliggør scrolling -- */
+}
+
+.scroller::-webkit-scrollbar {
+  display: none; /* -- skjuler scrollbar i Chrome og Safari -- */
+}
+
+.scroller div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrerer alt i midten af div'en */
+  text-align: center;
+  width: auto; /* Lader teksten bestemme bredden */
+  min-width: 10rem; /* Minimum bredde på boksen */
+}
+
+.scroller img {
+  max-height: 30rem;
+  width: auto;
+}
+
+/* -- tekst ved udvalgte øl -- */
+.olnavn_forside {
+  padding-top: 0.5rem;
+  max-width: 20rem;
+  width: 100%;
+  font-family: nunito, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.pris_forside {
+  padding-top: 0.2rem;
+  max-width: 20rem;
+  width: 100%;
+  font-family: nunito, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
 /* ------------------------------------------------ shop ------------------------------------------------ */
 /* -- brødkrummer -- */
 .brodkrummer {
