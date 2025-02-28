@@ -172,11 +172,62 @@ h1 {
   color: black;
   text-align: center;
   font-size: 1rem;
-  transition: opacity 0.3s ease-in-out;
   position: absolute; /* -- sørger for, at knappen ikke forsvinder -- */
   bottom: 0; /* -- placeres under billedet -- */
 }
 
+.se_alle {
+  text-decoration: underline;
+  text-align: right;
+  margin: -1rem 2rem;
+  color: black;
+}
+
+/* -- smag af fællesskab sektion -- */
+/* -- tekst -- */
+.smag_af_forside {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  margin: 10rem 3rem 2rem 3rem; /* -- top, højre, bund, venstre -- */
+  gap: 3rem;
+}
+
+.smag_af_forside p {
+  margin: 1rem 0rem;
+}
+
+.forside_tekst {
+  align-self: center;
+}
+
+.forside_knap {
+  display: block;
+  background-color: #cdb5f9;
+  color: white;
+  border-radius: 20px;
+  padding: 0.7rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  margin: auto;
+}
+
+/* -- styling af billedet -- */
+#forside_billede {
+  display: block;
+  height: 30rem;
+  width: auto;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* -- styling af maskot billede -- */
+#maskot_forside {
+  width: 15rem;
+  padding-left: 0.4rem;
+  transform: rotate(20deg); /* -- rotation af billedet -- */
+}
 
 /* ------------------------------------------------ shop ------------------------------------------------ */
 /* -- brødkrummer -- */
