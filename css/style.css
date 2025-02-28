@@ -72,7 +72,7 @@ a {
 .logo {
   width: auto;
   height: 3rem;
-  justify-self: start; /* placeres til venstre */
+  justify-self: start; /* -- placeres til venstre -- */
   padding-left: 1.5rem;
 }
 
@@ -100,7 +100,7 @@ a {
 }
 /* ------------------------------------------------ forsiden ------------------------------------------------ */
 .udvalgteOl {
-  padding: 2rem 0rem 0rem 3rem; /*-- top, højre, bund, venstre --*/
+  padding: 2rem 0rem 0rem 3rem; /* -- top, højre, bund, venstre -- */
 }
 
 h1 {
@@ -124,24 +124,28 @@ h1 {
 .scroller div {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrerer alt i midten af div'en */
+  position: relative;
+  align-items: center; /* -- centrerer alt i midten af div'en -- */
   text-align: center;
-  width: auto; /* Lader teksten bestemme bredden */
-  min-width: 10rem; /* Minimum bredde på boksen */
+  width: auto; /* -- lader teksten bestemme bredden -- */
+  min-width: 10rem; /* -- minimum bredde på boksen -- */
+  padding-top: 0.7rem;
+  min-height: 38rem; /* -- øger højden, så der er plads til knappen -- */
 }
 
 .scroller img {
   max-height: 30rem;
   width: auto;
+  transition: transform 0.3s ease-in-out; /* -- sørger for en jævn overgang begge veje -- */
 }
 
 /* -- tekst ved udvalgte øl -- */
 .olnavn_forside {
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   max-width: 20rem;
   width: 100%;
   font-family: nunito, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -150,9 +154,29 @@ h1 {
   max-width: 20rem;
   width: 100%;
   font-family: nunito, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
+
+/* -- zoom effekt af billeder -- */
+.zoom {
+  transform: scale(1.05); /* -- gør billedet 5% større -- */
+}
+
+/* -- styling af knappen -- */
+.vaelg_muligheder {
+  display: none;
+  padding: 0.7rem 1rem;
+  border: 1px solid black;
+  background-color: #f4f4f4;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute; /* -- sørger for, at knappen ikke forsvinder -- */
+  bottom: 0; /* -- placeres under billedet -- */
+}
+
 
 /* ------------------------------------------------ shop ------------------------------------------------ */
 /* -- brødkrummer -- */
