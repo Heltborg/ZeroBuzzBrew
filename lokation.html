@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZBB | Find os</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="img/ikoner/fav_ikon.png" />
+    <!-- Connected til CSS og Javascript -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Connected til google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+  </head>
+
+  <!------------------------------------------ body starter ------------------------------------------>
+  <body>
+    <!------------------------------------------ header starter ------------------------------------------>
+    <header>
+      <nav class="navigationsbar">
+        <!-- logo -->
+        <div>
+          <a href="index.html"><img src="img/ikoner/zbb_hvid.png" alt="ZBB" class="logo" /></a>
+        </div>
+
+        <!-- menupunkter desktop -->
+        <div class="menupunkter">
+          <a href="shop.html">Shop</a>
+          <a href="events.html">Events</a>
+          <a href="running-club.html">Running Club</a>
+          <a href="lokation.html" class="valgt_menupunkt">Lokation</a>
+          <a href="om-os.html">Om os</a>
+        </div>
+
+        <!-- ikoner -->
+        <div class="ikoner">
+          <img src="img/ikoner/soeg_ikon.png" alt="Søg ikon" class="ikon" />
+          <a href="min-profil.html"><img src="img/ikoner/bruger_ikon.png" alt="Profil ikon" class="ikon" /></a>
+          <img src="img/ikoner/shop_ikon.png" alt="Kurv ikon" class="ikon" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- brødkrummer -->
+      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Find os</nav>
+      <section>
+        <h1 class="findos_overskrift">ZeroBuzz Find os!</h1>
+      </section>
+
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/findos/bodega66.jpg" alt="Bodega 66" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Bodega 66</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/findos/fairbar.jpg" alt="Fairbar" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Fairbar</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/findos/Vaeskebalancen.jpg" alt="Væskebalancen" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Væskebalancen</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/findos/NaboKiosk.jpg" alt="Nabo Kiosk" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Nabo Kiosk</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/findos/vesterlauget.jpg" alt="Vesterlauget" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Vesterlauget</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/findos/gbar.jpg" alt="Gbar" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Gbar</div>
+        </div>
+      </div>
+    </main>
+
+    <!------------------------------------------ footer starter ------------------------------------------>
+    <footer class="footer">
+      <!-- om os sektion-->
+      <nav class="navigation_footer">
+        <h1 class="footer_overskrift">Om os</h1>
+        <ul class="footer_punkter">
+          <li><a href="om_os.html">Om os →</a></li>
+          <li><a href="lokation.html">Find os →</a></li>
+          <li><a href="shop.html">Vores produkter →</a></li>
+          <li><a href="login.html">Bliv en del af ZBB →</a></li>
+          <li>FAQ →</li>
+        </ul>
+      </nav>
+
+      <!-- følg os sektion -->
+      <section>
+        <h1 class="footer_overskrift">Følg os</h1>
+        <ul>
+          <li>
+            <div class="some_ikon">
+              <img src="img/ikoner/tiktok.png" alt="TikTok ikon" class="tiktok" />
+              <span>TikTok</span>
+            </div>
+          </li>
+          <li>
+            <div class="some_ikon">
+              <img src="img/ikoner/instagram.png" alt="Instagram ikon" class="instagram" />
+              <span>Instagram</span>
+            </div>
+          </li>
+          <li>
+            <div class="some_ikon">
+              <img src="img/ikoner/facebook.png" alt="Facebook ikon" class="facebook" />
+              <span> Facebook</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- kontakt sektion -->
+      <section>
+        <h1 class="footer_overskrift">Kontakt</h1>
+        <p>Fiskerivej 2C</p>
+        <p id="adresse">8000 Aarhus C</p>
+        <p>Tlf: 91 56 38 30</p>
+        <p>kontakt@zbb.dk</p>
+      </section>
+
+      <!-- nyhedsbrev -->
+      <section>
+        <h1 class="footer_overskrift">Nyhedsbrev</h1>
+        <form class="nyhedsbrev">
+          <p>Tilmeld dig nyhedsbrevet og få 10% rabat!</p>
+          <input type="email" placeholder="Skriv din e-mail" class="email-felt" required />
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
