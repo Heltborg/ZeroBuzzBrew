@@ -74,3 +74,42 @@ window.addEventListener("scroll", updatePilVisibility);
 
 //Kører funktionen
 document.addEventListener("DOMContentLoaded", updatePilVisibility);
+
+
+
+// BEERWALK SIDEN
+// Laver en pop-up når du klikker tilmeld beerwalk
+document.addEventListener("DOMContentLoaded", function () {
+  function showPopup() {
+    const popupContainer = document.createElement("div");
+    popupContainer.id = "popupContainer";
+    popupContainer.innerHTML = `
+          <div id="popupBox">
+              <button id="closePopup">&times;</button>
+              <div id="popupContent">
+              <img src="img/beer_walk_maskot.png" alt="BuzzBeeFly" id="popupImage">
+                  <h2>Du er nu tilmeldt ZeroBuzz Beer Walk</h2>
+                  <p>Vi glæder os til at tage dig med på en smagfuld gåtur fyldt med god energi, fællesskab og de bedste alkoholfrie øl.</p>
+                  <br>
+                  <p>📩 Tjek din mail for flere detaljer – vi ses snart til en gåtur med smag og fællesskab!</p>
+              </div>
+          </div>
+      `;
+    document.body.appendChild(popupContainer);
+
+    // Luk pop-up'en ved klik på knappen
+    document.getElementById("closePopup").addEventListener("click", function () {
+      popupContainer.remove();
+    });
+
+    // Luk pop-up'en ved klik udenfor boksen
+    popupContainer.addEventListener("click", function (event) {
+      if (event.target === popupContainer) {
+        popupContainer.remove();
+      }
+    });
+  }
+
+  // Korrekt selector for knappen
+  document.getElementById("signupButton").addEventListener("click", showPopup);
+});

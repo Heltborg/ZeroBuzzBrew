@@ -6,8 +6,9 @@
     <title>Zero Buzz Brew</title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="img/ikoner/fav_ikon.png" />
-    <!-- Connected til CSS -->
+    <!-- Connected til CSS og Javascript -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
     <!-- Connected til google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,9 +29,9 @@
         <div class="menupunkter">
           <a href="shop.html">Shop</a>
           <a href="events.html">Events</a>
-          <a href="running-club.html">Running Club</a>
+          <a href="running_club.html">Running Club</a>
           <a href="lokation.html">Lokation</a>
-          <a href="om-os.html">Om os</a>
+          <a href="om_os.html" class="valgt_menupunkt">Om os</a>
         </div>
 
         <!-- ikoner -->
@@ -41,38 +42,33 @@
         </div>
       </nav>
     </header>
+
     <!------------------------------------------ main starter ------------------------------------------>
     <main>
       <!-- brødkrummer -->
-      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Min profil</nav>
-      <section class="login_section">
-        <img src="img/maskot/hel_maskot.png" alt="buzzbeefly" class="bee_maskot_login" />
-        <div class="login_box">
-          <div class="profil_baggrund">
-            <img src="img/ikoner/bruger_ikon.png" alt="Profil ikon" class="profile_icon" />
-          </div>
-          <form>
-            <!-- Markeret med 'required' så brugeren skal udfylde det før formularen kan sendes -->
-            <div class="input_mail">
-              <img src="img/ikoner/bruger_ikon.png" alt="Profil ikon" class="mail_ikon">
-              <input type="email" placeholder="Email" required />
-            </div>
-            <div class="input_kode">
-              <img src="img/ikoner/laas_ikon.png" alt="Kode ikon" class="kode_ikon">
-              <input type="password" placeholder="Kode" required />
-            </div>
-            <div class="husk_mig">
-              <label><input type="checkbox" /> Husk mig</label>
-            </div>
-            <div class="glemt_kode">
-              <a href="#">Har du glemt din adgangskode?</a>
-            </div>
-            <button type="submit" class="login_button">LOG IND</button>
-          </form>
+      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Om os</nav>
+
+      <!-- om os -->
+      <section class="tekst_om_os_sektion">
+        <h1>Om os</h1>
+        <div class="tekst_container">
+          <p>ZeroBuzz Brew er et bryggeri med en mission – at gøre alkoholfri øl lige så spændende, smagfuld og social som traditionel øl.</p>
+          <p>Vi mener, at fællesskab ikke behøver en promille, og at du fortjener et alternativ, der lader dig nyde øjeblikket uden kompromis.</p>
+          <ul>
+            <li><p>1. Vores øl er fyldt med smag, men uden de negative bivirkninger af alkohol. Perfekt til dig, der vil nyde en kold øl og stadig være frisk dagen efter.</p></li>
+            <li><p>2. Vi tilbyder et sundere alternativ, og med ZeroBuzz Brew får du en øl, der passer til en aktiv livsstil.</p></li>
+            <li><p>3. Vi prioriterer fællesskab frem for promiller – Vi skaber sociale oplevelser, hvor alle kan være med.</p></li>
+          </ul>
+          <p>Vi tror på, at alkoholfri øl ikke kun skal være et alternativ, men det skal være et lige så attraktivt valg som enhver anden drik.</p>
         </div>
+        <img src="img/maskot/hel_maskot.png" alt="buzzbeefly" />
+
+        <a href="lokation.html">
+          <button class="cta-button-om-os">Se hvor du kan købe ZeroBuzz Brew</button>
+        </a>
       </section>
     </main>
-    <!-- footer -->
+    <!------------------------------------------ footer starter ------------------------------------------>
     <footer class="footer">
       <!-- om os sektion-->
       <nav class="navigation_footer">

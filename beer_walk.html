@@ -6,8 +6,9 @@
     <title>Zero Buzz Brew</title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="img/ikoner/fav_ikon.png" />
-    <!-- Connected til CSS -->
+    <!-- Connected til CSS og Javascript -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
     <!-- Connected til google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,10 +28,10 @@
         <!-- menupunkter desktop -->
         <div class="menupunkter">
           <a href="shop.html">Shop</a>
-          <a href="events.html">Events</a>
-          <a href="running-club.html">Running Club</a>
+          <a href="events.html" class="valgt_menupunkt">Events</a>
+          <a href="running_club.html">Running Club</a>
           <a href="lokation.html">Lokation</a>
-          <a href="om-os.html">Om os</a>
+          <a href="om_os.html">Om os</a>
         </div>
 
         <!-- ikoner -->
@@ -41,38 +42,40 @@
         </div>
       </nav>
     </header>
+
     <!------------------------------------------ main starter ------------------------------------------>
     <main>
       <!-- brødkrummer -->
-      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Min profil</nav>
-      <section class="login_section">
-        <img src="img/maskot/hel_maskot.png" alt="buzzbeefly" class="bee_maskot_login" />
-        <div class="login_box">
-          <div class="profil_baggrund">
-            <img src="img/ikoner/bruger_ikon.png" alt="Profil ikon" class="profile_icon" />
-          </div>
-          <form>
-            <!-- Markeret med 'required' så brugeren skal udfylde det før formularen kan sendes -->
-            <div class="input_mail">
-              <img src="img/ikoner/bruger_ikon.png" alt="Profil ikon" class="mail_ikon">
-              <input type="email" placeholder="Email" required />
-            </div>
-            <div class="input_kode">
-              <img src="img/ikoner/laas_ikon.png" alt="Kode ikon" class="kode_ikon">
-              <input type="password" placeholder="Kode" required />
-            </div>
-            <div class="husk_mig">
-              <label><input type="checkbox" /> Husk mig</label>
-            </div>
-            <div class="glemt_kode">
-              <a href="#">Har du glemt din adgangskode?</a>
-            </div>
-            <button type="submit" class="login_button">LOG IND</button>
-          </form>
+      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Events > BeerWalk</nav>
+
+      <!-- beer walk -->
+      <section class="h1_billede_beer_walk">
+        <h1>ZeroBuzz BeerWalk</h1>
+        <img src="img/beer_walk.png" alt="billede_af_beer_walk" />
+        <div class="tekst_beer_walk">
+          <p>Er du klar til en hyggelig gåtur fyldt med gode vibes og alkoholfri specialøl?</p>
+          <p>Tag med på ZeroBuzz BeerWalk, hvor vi kombinerer smagsoplevelser, fællesskab og frisk luft.</p>
+          <br />
+          <p>
+            📍 Dato & Tid: D. 05/06-2025 kl. 14
+            <br />
+            📍 Mødested: Aarhus banegård
+            <br />
+            📍 Rute: Vi går gennem Strøget og Latinerkvarteret, nyder udsigten ved Dokk1, og slutter ved Aarhus Ø.
+          </p>
+          <h2>Hvordan fungerer det?</h2>
+          <p>
+            Vi går en afslappet rute og stopper undervejs for at smage på udvalgte ZeroBuzz specialøl, mens vi hygger og nyder turen sammen. Ingen stress, ingen tømmermænd – bare god stemning og lækre
+            smagsoplevelser!
+          </p>
+          <button id="signupButton" class="cta_button_tilmeld_dig">Tilmeld dig</button>
+
+          <!-- maskot -->
+          <img src="img/maskot/hel_maskot.png" alt="buzzbeefly" class="bee_beer_walk" />
         </div>
       </section>
     </main>
-    <!-- footer -->
+    <!------------------------------------------ footer starter ------------------------------------------>
     <footer class="footer">
       <!-- om os sektion-->
       <nav class="navigation_footer">
