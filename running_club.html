@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZBB | Running club</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="img/ikoner/fav_ikon.png" />
+    <!-- Connected til CSS og Javascript -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/aarstal.js"></script>
+    <script src="js/email-popup.js"></script>
+    <!-- Connected til google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+  </head>
+
+  <!------------------------------------------ body starter ------------------------------------------>
+  <body>
+    <!------------------------------------------ header starter ------------------------------------------>
+    <header>
+      <nav class="navigationsbar">
+        <!-- logo -->
+        <div>
+          <a href="index.html"><img src="img/ikoner/zbb_hvid.png" alt="ZBB" class="logo" /></a>
+        </div>
+
+        <!-- menupunkter desktop -->
+        <div class="menupunkter">
+          <a href="shop.html">Shop</a>
+          <a href="events.html">Events</a>
+          <a href="running_club.html" class="valgt_menupunkt">Running Club</a>
+          <a href="lokation.html">Lokation</a>
+          <a href="om_os.html">Om os</a>
+        </div>
+
+        <!-- ikoner -->
+        <div class="ikoner">
+          <img src="img/ikoner/soeg_ikon.png" alt="Søg ikon" class="ikon" />
+          <a href="login.html"><img src="img/ikoner/bruger_ikon.png" alt="Profil ikon" class="ikon" /></a>
+          <img src="img/ikoner/shop_ikon.png" alt="Kurv ikon" class="ikon" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <img src="img/Runningclubhero.png" alt="ZeroBuzz Running Club Members" class="header-image" />
+
+        <!-- brødkrummer -->
+        <nav class="brodkrummer" aria-label="breadcrumb">Forside > Running Club</nav>
+
+        <h1>ZeroBuzz running club</h1>
+
+        <div class="description">
+          <p>
+            Vil du løbe, hygge og nyde en kold alkoholfri øl i godt selskab? Så er ZeroBuzz Running Club noget for dig! Her handler det ikke om at være hurtigst, men om at have det sjovt, holde sig
+            aktiv og være en del af et fantastisk fællesskab.
+          </p>
+        </div>
+
+        <ul class="benefits">
+          <li>Hver tirsdag kl. 18.00 mødes vi for en frisk løbetur – uanset om du er nybegynder eller erfaren løber. Vi løber i et tempo, hvor alle kan være med, så du kan nyde turen i dit tempo.</li>
+          <li>Efter løbet runder vi af på vores bar, hvor vi nyder vores med lækre snacks og fantastiske alkoholfrie øl. Ingen promiller, ingen tømmermænd – kun god energi og fællesskab!</li>
+          <li>Hvorfor signe op?</li>
+          <li>Få tilsendt nyhedsbrev og få 10% på første online bestilling</li>
+          <li>Få adgang til vores ugentlige løbeklub</li>
+          <li>Bliv en del af et inkluderende fællesskab</li>
+          <li>Nyd alkoholfri specialøl og snacks efter hver tur</li>
+          <li>Find nye løbskammerater og få motivation til at bevæge dig</li>
+        </ul>
+
+        <h2>Tilmeld dig her</h2>
+
+        <form class="form-grid">
+          <div class="form-field">
+            <label for="navn">Navn*</label>
+            <input type="text" id="navn" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email*</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="form-field">
+            <label for="by">By*</label>
+            <input type="text" id="by" required />
+          </div>
+
+          <div class="form-field">
+            <label for="aarstal">Årstal*</label>
+            <select id="aarstal" required>
+              <option value="">Vælg årstal</option>
+              <!-- Add years here -->
+            </select>
+          </div>
+
+          <button type="submit" class="submit-button">Tilmeld dig</button>
+        </form>
+
+        <img src="img/maskot/hel_maskot.png" alt="ZeroBuzz Mascot" class="mascot" />
+      </div>
+      <div id="errorPopup" class="error-popup" style="display: none">
+        <div class="error-header">
+          <div class="error-title">⚠️ Hmm... Vi kunne ikke finde den email</div>
+          <button class="close-button" onclick="closeErrorPopup()">×</button>
+        </div>
+        <div class="error-message">Tjek, om du har skrevet emailadressen korrekt, eller prøv en anden.</div>
+      </div>
+    </main>
+
+    <!------------------------------------------ footer starter ------------------------------------------>
+    <footer class="footer">
+      <!-- om os sektion-->
+      <nav class="navigation_footer">
+        <h1 class="footer_overskrift">Om os</h1>
+        <ul class="footer_punkter">
+          <li><a href="om_os.html">Om os →</a></li>
+          <li><a href="lokation.html">Find os →</a></li>
+          <li><a href="shop.html">Vores produkter →</a></li>
+          <li><a href="login.html">Bliv en del af ZBB →</a></li>
+          <li>FAQ →</li>
+        </ul>
+      </nav>
+
+      <!-- følg os sektion -->
+      <section>
+        <h1 class="footer_overskrift">Følg os</h1>
+        <ul>
+          <li>
+            <div class="some_ikon">
+              <img src="img/ikoner/tiktok.png" alt="TikTok ikon" class="tiktok" />
+              <span>TikTok</span>
+            </div>
+          </li>
+          <li>
+            <div class="some_ikon">
+              <img src="img/ikoner/instagram.png" alt="Instagram ikon" class="instagram" />
+              <span>Instagram</span>
+            </div>
+          </li>
+          <li>
+            <div class="some_ikon">
+              <img src="img/ikoner/facebook.png" alt="Facebook ikon" class="facebook" />
+              <span> Facebook</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- kontakt sektion -->
+      <section>
+        <h1 class="footer_overskrift">Kontakt</h1>
+        <p>Fiskerivej 2C</p>
+        <p id="adresse">8000 Aarhus C</p>
+        <p>Tlf: 91 56 38 30</p>
+        <p>kontakt@zbb.dk</p>
+      </section>
+
+      <!-- nyhedsbrev -->
+      <section>
+        <h1 class="footer_overskrift">Nyhedsbrev</h1>
+        <form class="nyhedsbrev">
+          <p>Tilmeld dig nyhedsbrevet og få 10% rabat!</p>
+          <input type="email" placeholder="Skriv din e-mail" class="email-felt" required />
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
