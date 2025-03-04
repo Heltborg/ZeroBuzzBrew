@@ -460,6 +460,83 @@ h1 {
   width: 12%;
 }
 
+/* ------------------------------------------------ events og find os side ------------------------------------------------ */
+.event_overskrift {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 2rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.event-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Added for absolute positioning of overlay */
+}
+
+.event-content {
+  height: 300px;
+  background-color: #f0f0f0;
+  position: relative; /* Added for overlay positioning */
+}
+
+.event-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-label {
+  background-color: #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Læs mere knap */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.event-content:hover .hover-overlay {
+  opacity: 1;
+}
+
+.read-more-btn {
+  padding: 8px 16px;
+  background-color: #cdb5f9;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.read-more-btn:hover {
+  transform: scale(1.05);
+}
+
 /* ------------------------------------------------ beer walk side ------------------------------------------------ */
 .h1_billede_beer_walk {
   display: grid;
@@ -525,8 +602,7 @@ h1 {
 .cta_button_tilmeld_dig:hover {
   background-color: #875fd0;
   border-radius: 30px;
-  padding: 1.1rem 2.1rem;
-  font-size: 1.1rem;
+  transform: scale(1.05); /* Gør knappen større uden at ændre layoutet */
 }
 
 .bee_beer_walk {

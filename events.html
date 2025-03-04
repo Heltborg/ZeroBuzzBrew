@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZBB | Shop</title>
+    <title>ZBB | Events</title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="img/ikoner/fav_ikon.png" />
-    <!-- Connected til CSS -->
+    <!-- Connected til CSS og Javascript -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Connected til google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,8 +26,8 @@
 
         <!-- menupunkter desktop -->
         <div class="menupunkter">
-          <a href="shop.html" class="valgt_menupunkt">Shop</a>
-          <a href="events.html">Events</a>
+          <a href="shop.html">Shop</a>
+          <a href="events.html" class="valgt_menupunkt">Events</a>
           <a href="running_club.html">Running Club</a>
           <a href="lokation.html">Lokation</a>
           <a href="om_os.html">Om os</a>
@@ -45,9 +45,76 @@
     <!------------------------------------------ main starter ------------------------------------------>
     <main>
       <!-- brødkrummer -->
-      <nav class="brodkrummer" aria-label="breadcrumb">Shop</nav>
+      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Events</nav>
+
+      <!-- event indhold -->
+      <section>
+        <h1 class="event_overskrift">ZeroBuzz events</h1>
+      </section>
+
+      <section class="events-grid">
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/events/beeevent.png" alt="Be square events" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Be square events</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/events/beerwalkfridays.png" alt="Beer Walk Fridays" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Beer Walk Fridays</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/events/hops.png" alt="Beerwalk event" />
+            <div class="hover-overlay">
+              <a href="beer_walk.html"><button class="read-more-btn">Læs mere</button></a>
+            </div>
+          </div>
+          <div class="event-label">Beerwalk event</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/events/inshopevent.png" alt="In-Shop events" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">In-Shop events</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/events/runningclub.png" alt="Running Club" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Running Club</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-content">
+            <img src="img/events/musicevent.png" alt="Music and Open House" />
+            <div class="hover-overlay">
+              <button class="read-more-btn">Læs mere</button>
+            </div>
+          </div>
+          <div class="event-label">Music and Open House</div>
+        </div>
+      </section>
     </main>
-    <!-- footer -->
+    <!------------------------------------------ footer starter ------------------------------------------>
     <footer class="footer">
       <!-- om os sektion-->
       <nav class="navigation_footer">
