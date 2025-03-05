@@ -36,9 +36,9 @@
 
         <!-- ikoner -->
         <div class="ikoner">
-          <img src="img/ikoner/soeg_ikon.png" alt="Søg ikon" class="ikon" />
+          <a href="fejl_side.html"><img src="img/ikoner/soeg_ikon.png" alt="Søg ikon" class="ikon" /></a>
           <a href="login.html"><img src="img/ikoner/bruger_ikon.png" alt="Profil ikon" class="ikon" /></a>
-          <img src="img/ikoner/shop_ikon.png" alt="Kurv ikon" class="ikon" />
+          <a href="fejl_side.html"><img src="img/ikoner/shop_ikon.png" alt="Kurv ikon" class="ikon" /></a>
         </div>
       </nav>
     </header>
@@ -48,31 +48,33 @@
       <!-- brødkrummer -->
       <nav class="brodkrummer" aria-label="breadcrumb">Forside > Shop > Hazy Lazy IPA</nav>
 
-      <div class="product_content_oel">
-        <img src="img/flasker/hazy_lazy_ipa.png" alt="Hazy Lazy IPA" class="product_image_oel">
-        <div class="product_info_oel">
-            <h1>HAZY LAZY IPA</h1>
-            <p>Hazy Lazy IPA er den perfekte øl til dig, der vil have den fulde IPA-smag uden alkohol.</p>
-            <div class="quantity_selector_oel">
-                <button id="decreaseButton">-</button>
-                <span id="quantityDisplay">1</span>
-                <button id="increaseButton">+</button>
+      <section class="hazy_lazy_indhold">
+        <figure class="hazy_lazy_stor">
+          <img src="img/flasker/hazy_lazy_ipa.png" alt="Hazy Lazy IPA" />
+        </figure>
+
+        <!-- overskrift og "intro-tekst" -->
+        <article class="hazy_lazy_kob">
+          <h1 class="hazy_kob_overskrift">Hazy Lazy IPA</h1>
+          <p class="hazy_beskrivelse">Hazy Lazy IPA er den perfekte øl til dig, der vil have den fulde IPA-smag uden alkohol.</p>
+
+          <!-- køb sektion -->
+          <div class="koeb_sektion">
+            <div class="antal_boks">
+              <button class="minus" aria-label="Fjern en enhed">-</button>
+              <span class="antal">1</span>
+              <button class="plus" aria-label="Tilføj en enhed">+</button>
             </div>
-            <div id="cartContainer" style="display: none;">
-                <h3>Din kurv</h3>
-                <p>Hazy Lazy IPA</p>
-                <p>Pris: 27 kr</p>
-                <p>Stk: <span id="cartItemQuantity">1</span></p>
-                <p>Total: <span id="cartTotalPrice">27 kr</span></p>
-            </div>
-    
-            
-            
-            <button id="addToCartButton" class="add_to_cart_oel">Læg i indkøbskurv</button>
-            <p class="description_oel">Den er frugtig, blød og let hazy, med noter af citrus, tropiske frugter og en mild bitterhed. En forfriskende smagsoplevelse, der gør det let at nyde en god øl.</p>
-        </div>
-        <img src="img/maskot_koeb_oel.png" alt="buzzbeefly" class="bee_oel_side">
-    </div>
+            <button class="indkobskurv_knap">Læg i indkøbskurv</button>
+          </div>
+          <p class="pris_pr_stk">27 DKK pr. stk.</p>
+
+          <!-- smags beskrivelse -->
+          <p class="hazy_smag">Den er frugtig, blød og let hazy, med noter af citrus, tropiske frugter og en mild bitterhed. En forfriskende smagsoplevelse, der gør det let at nyde en god øl.</p>
+        </article>
+
+        <img src="img/maskot/maskot_sort.png" alt="Maskot" class="hazy_maskot" />
+      </section>
     </main>
 
     <!------------------------------------------ footer starter ------------------------------------------>

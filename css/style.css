@@ -360,7 +360,7 @@ a {
 .produkt_kort {
   width: 14rem;
   height: 21rem;
-  background-color: #F2EDFB;
+  background-color: #f2edfb;
   border-radius: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -438,10 +438,144 @@ a {
   color: #666;
 }
 
+/* ------------------------------------------------ hazy lazy køb side ------------------------------------------------ */
+.hazy_lazy_indhold {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* -- to kolonner -- */
+  grid-template-rows: auto auto; /* -- to rækker -- */
+  align-items: center;
+  padding: 3rem;
+  position: relative;
+}
 
+/* -- containeren til billedet -- */
+.hazy_lazy_stor {
+  grid-row: span 2; /* -- fylder begge rækker -- */
+  display: flex;
+  justify-content: center;
+}
+
+/* -- selve billedet -- */
+.hazy_lazy_stor img {
+  width: 12rem;
+  height: auto;
+}
+
+/* -- tekst -- */
+.hazy_lazy_kob {
+  text-align: left;
+  margin: 9rem 8rem 0rem 4rem; /* -- top, højre, bund, venstre -- */
+}
+
+.hazy_kob_overskrift {
+  font-family: nunito, sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hazy_beskrivelse,
+.hazy_smag {
+  font-size: 1.2rem;
+  margin-top: 4rem;
+}
+
+.pris_pr_stk {
+  font-size: 1rem;
+}
+
+/* -- knapper -- */
+.koeb_sektion {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+
+/* -- knappen hvor man vælger antal -- */
+.antal_boks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  gap: 1.5rem;
+  width: fit-content; /* -- gør boksen så lille som muligt -- */
+}
+
+/* -- styling af plus og minus -- */
+.antal_boks button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+/* -- styling af tallet -- */
+.koeb_sektion .antal {
+  font-size: 1.3rem;
+  width: 2rem;
+  text-align: center;
+}
+
+/* -- styling af læg i kurv knap -- */
+.indkobskurv_knap {
+  background-color: #cdb5f9;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.indkobskurv_knap:hover {
+  background-color: #875fd0;
+}
+
+/* -- maskot -- */
+.hazy_maskot {
+  grid-column: 2;
+  width: 20%;
+  position: absolute;
+  right: 5rem;
+  bottom: 0;
+}
+
+/* ------------------------------------------------ 404 side ------------------------------------------------ */
+.fejl_side {
+  background-color: #ece2ff;
+}
+.fejl_overskrift {
+  font-family: nunito, sans-serif;
+  font-weight: 600;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.fejl_tekst {
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+.fejl_til_forside {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: black;
+  padding: 2rem;
+}
+
+.flyvende_billede {
+  position: absolute; /* -- billedet kan flyttes -- */
+  right: 0; /* -- startposition -- */
+  top: 50%; /* -- centrerer billedet vertikalt -- */
+  width: 15%;
+  transition: transform 0.1s linear; /* -- gør bevægelsen blød -- */
+}
 
 /* ------------------------------------------------ login ------------------------------------------------ */
-
 .icons span {
   margin-left: 1rem;
   cursor: pointer;
