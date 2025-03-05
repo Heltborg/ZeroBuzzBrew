@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZBB | Find os</title>
+    <title>ZBB | Hazy Lazy IPA</title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="img/ikoner/fav_ikon.png" />
-    <!-- Connected til CSS og Javascript -->
+    <!-- Connected til CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/hazy-lazy.js" defer></script>
     <!-- Connected til google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,10 +27,10 @@
 
         <!-- menupunkter desktop -->
         <div class="menupunkter">
-          <a href="shop.html">Shop</a>
+          <a href="shop.html" class="valgt_menupunkt">Shop</a>
           <a href="events.html">Events</a>
           <a href="running_club.html">Running Club</a>
-          <a href="lokation.html" class="valgt_menupunkt">Lokation</a>
+          <a href="lokation.html">Lokation</a>
           <a href="om_os.html">Om os</a>
         </div>
 
@@ -41,74 +42,37 @@
         </div>
       </nav>
     </header>
+
+    <!------------------------------------------ main starter ------------------------------------------>
     <main>
       <!-- brødkrummer -->
-      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Find os</nav>
-      <section>
-        <h1 class="findos_overskrift">ZeroBuzz Find os!</h1>
-      </section>
+      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Shop > Hazy Lazy IPA</nav>
 
-      <section class="events-grid">
-        <article class="event-card">
-          <figure class="event-content">
-            <img src="img/findos/bodega66.jpg" alt="Bodega 66" />
-            <figcaption class="hover-overlay">
-              <button class="read-more-btn">Læs mere</button>
-            </figcaption>
-          </figure>
-          <div class="event-label">Bodega 66</div>
-        </article>
-
-        <article class="event-card">
-          <figure class="event-content">
-            <img src="img/findos/fairbar.jpg" alt="Fairbar" />
-            <figcaption class="hover-overlay">
-              <button class="read-more-btn">Læs mere</button>
-            </figcaption>
-          </figure>
-          <div class="event-label">Fairbar</div>
-        </article>
-
-        <article class="event-card">
-          <figure class="event-content">
-            <img src="img/findos/Vaeskebalancen.jpg" alt="Væskebalancen" />
-            <figcaption class="hover-overlay">
-              <button class="read-more-btn">Læs mere</button>
-            </figcaption>
-          </figure>
-          <div class="event-label">Væskebalancen</div>
-        </article>
-
-        <article class="event-card">
-          <figure class="event-content">
-            <img src="img/findos/NaboKiosk.jpg" alt="Nabo Kiosk" />
-            <figcaption class="hover-overlay">
-              <button class="read-more-btn">Læs mere</button>
-            </figcaption>
-          </figure>
-          <div class="event-label">Nabo Kiosk</div>
-        </article>
-
-        <article class="event-card">
-          <figure class="event-content">
-            <img src="img/findos/vesterlauget.jpg" alt="Vesterlauget" />
-            <figcaption class="hover-overlay">
-              <button class="read-more-btn">Læs mere</button>
-            </figcaption>
-          </figure>
-          <div class="event-label">Vesterlauget</div>
-        </article>
-
-        <article class="event-card">
-          <figure class="event-content">
-            <img src="img/findos/gbar.jpg" alt="Gbar" />
-            <figcaption class="hover-overlay">
-              <button class="read-more-btn">Læs mere</button>
-            </figcaption>
-          </figure>
-          <div class="event-label">Gbar</div>
-        </article>
-      </section>
+      <div class="product_content_oel">
+        <img src="img/flasker/hazy_lazy_ipa.png" alt="Hazy Lazy IPA" class="product_image_oel">
+        <div class="product_info_oel">
+            <h1>HAZY LAZY IPA</h1>
+            <p>Hazy Lazy IPA er den perfekte øl til dig, der vil have den fulde IPA-smag uden alkohol.</p>
+            <div class="quantity_selector_oel">
+                <button id="decreaseButton">-</button>
+                <span id="quantityDisplay">1</span>
+                <button id="increaseButton">+</button>
+            </div>
+            <div id="cartContainer" style="display: none;">
+                <h3>Din kurv</h3>
+                <p>Hazy Lazy IPA</p>
+                <p>Pris: 27 kr</p>
+                <p>Stk: <span id="cartItemQuantity">1</span></p>
+                <p>Total: <span id="cartTotalPrice">27 kr</span></p>
+            </div>
+    
+            
+            
+            <button id="addToCartButton" class="add_to_cart_oel">Læg i indkøbskurv</button>
+            <p class="description_oel">Den er frugtig, blød og let hazy, med noter af citrus, tropiske frugter og en mild bitterhed. En forfriskende smagsoplevelse, der gør det let at nyde en god øl.</p>
+        </div>
+        <img src="img/maskot_koeb_oel.png" alt="buzzbeefly" class="bee_oel_side">
+    </div>
     </main>
 
     <!------------------------------------------ footer starter ------------------------------------------>

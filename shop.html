@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="img/ikoner/fav_ikon.png" />
     <!-- Connected til CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/tilbage-til-toppen-shop.js" defer></script>
     <!-- Connected til google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,10 +45,374 @@
 
     <!------------------------------------------ main starter ------------------------------------------>
     <main>
+      <!-- hero billede -->
+      <img src="img/shop/shop_hero.jpg" alt="ZBB plakat, øl og bog" class="hero_shop" />
       <!-- brødkrummer -->
-      <nav class="brodkrummer" aria-label="breadcrumb">Shop</nav>
+      <nav class="brodkrummer" aria-label="breadcrumb">Forside > Shop</nav>
+      <!-- overskrift og filter -->
+      <section class="shop_tekst_sektion">
+        <h1>Shop</h1>
+        <p>Filter</p>
+      </section>
+
+      <!-- vare sektion -->
+      <section class="vare_sektion">
+        <!-- no buzz flaske -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/nobuzz_flaske.png" alt="No Buzz flaske" />
+          </figure>
+          <section class="produkt_info">
+            <h2>No Buzz Bottle</h2>
+            <p>125 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- hazy lazy ipa -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/hazy_lazy_ipa.png" alt="Hazy Lazy IPA" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Hazy Lazy IPA</h2>
+            <p>Fra 27 DKK</p>
+          </section>
+          <a href="hazy_lazy.html" class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </a>
+        </article>
+
+        <!-- mellow malt -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/mellow_malt.png" alt="Mellow malt" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Mellow Malt</h2>
+            <p>Fra 30 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- sweet summer sun -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/sweet_summer_sun.png" alt="Sweet summer sun" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Sweet Summer Sun</h2>
+            <p>Fra 32 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- no buzz hoodie -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/nobuzz_hoodie.png" alt="No buzz hoodie" />
+          </figure>
+          <section class="produkt_info">
+            <h2>No Buzz Hoodie</h2>
+            <p>349 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- citrus splash -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/citrus_splash.png" alt="Citrus splash" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Citrus Splash</h2>
+            <p>Fra 24 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- no buzz tee -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/nobuzz_tee.png" alt="No buzz tee" />
+          </figure>
+          <section class="produkt_info">
+            <h2>No Buzz Tee</h2>
+            <p>199 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- bubbly bliss -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/bubbly_bliss.png" alt="Bubbly bliss" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Bubbly Bliss</h2>
+            <p>Fra 25 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- no buzz totebag -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/nobuzz_totebag.png" alt="No buzz totebag" />
+          </figure>
+          <section class="produkt_info">
+            <h2>No Buzz Totebag</h2>
+            <p>99 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- strawberry blast -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/strawberry_blast.png" alt="Strawberry blast" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Strawberry Blast</h2>
+            <p>Fra 25 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- brew crew tee -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/brewcrew_tee.png" alt="Brew crew tee" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Brew Crew Tee</h2>
+            <p>199 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- hula hops -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/hula_hops.png" alt="Hula hops" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Hula Hops</h2>
+            <p>Fra 30 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- golden glow -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/golden_glow.png" alt="Golden glow" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Golden Glow</h2>
+            <p>Fra 25 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- brew crew flaske -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/brewcrew_flaske.png" alt="Brew crew flaske" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Brew Crew Bottle</h2>
+            <p>125 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- raspberry rain -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/rasberry_rain.png" alt="Raspberry rain" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Raspberry Rain</h2>
+            <p>Fra 25 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- brew crew totebag -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/brewcrew_totebag.png" alt="Brew crew totebag" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Brew Crew Totebag</h2>
+            <p>99 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- picnic date -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/picnic_date.png" alt="Picnic date" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Picnic Date</h2>
+            <p>Fra 26 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- brew crew strømper -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/brewcrew_socks.png" alt="Brew crew strømper" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Brew Crew Socks</h2>
+            <p>39 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- sour song -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/sour_song.png" alt="Sour song" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Sour Song</h2>
+            <p>Fra 27 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- disco dancer -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/disco_dancer.png" alt="Disco dancer" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Disco Dancer</h2>
+            <p>Fra 25 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- brew crew hoodie -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/brewcrew_hoodie.png" alt="Brew crew hoodie" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Brew Crew Hoodie</h2>
+            <p>349 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- no buzz socks -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/shop/nobuzz_socks.png" alt="No buzz socks" />
+          </figure>
+          <section class="produkt_info">
+            <h2>No Buzz Socks</h2>
+            <p>39 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- bee happy ale -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/bee_happy_ale.png" alt="Bee happy ale" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Bee Happy Ale</h2>
+            <p>Fra 32 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- buzz bee brew -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/buzzbrew.png" alt="Buzz bee brew" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Buzz Bee Brew</h2>
+            <p>Fra 27 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- bee breezy -->
+        <article class="produkt_kort">
+          <figure class="produkt_billede">
+            <img src="img/flasker/bee_breezy.png" alt="Bee breezy" />
+          </figure>
+          <section class="produkt_info">
+            <h2>Bee Breezy</h2>
+            <p>Fra 32 DKK</p>
+          </section>
+          <div class="shop_overlay">
+            <button class="shop_knap">Køb her</button>
+          </div>
+        </article>
+
+        <!-- pil tilbage til top -->
+      </section>
+      <a href="#"><img src="img/ikoner/pil.png" alt="Pil" class="pil" /></a>
     </main>
-    <!-- footer -->
+
+    <!------------------------------------------ footer starter ------------------------------------------>
     <footer class="footer">
       <!-- om os sektion-->
       <nav class="navigation_footer">

@@ -2,24 +2,22 @@
 
 //Variabler til pil, 'se alle', maskot og footer
 const pil = document.querySelector(".pil"); // Finder pil
-const seAlle = document.querySelector(".se_alle"); // Finder se alle
-const maskotForside = document.querySelector("#maskot_forside"); // Finder maskot
+const hero = document.querySelector(".hero_shop"); // Finder hero billedet
 const footer = document.querySelector(".footer_overskrift"); // Finder footerens overskrift
 
 //Funktion til at opdatere pilens synlighed afhængig af scroll-position
 function opdaterPilSynlighed() {
-  if (!pil || !seAlle || !maskotForside || !footer) return; //tjekker om elementerne findes, hvis ikke de gør vil koden ikke køre funktionen
+  if (!pil || !hero || !footer) return; //tjekker om elementerne findes, hvis ikke de gør vil koden ikke køre funktionen
 
   // Henter positionen af elementerne i forhold til viewporten
-  const seAllePosition = seAlle.getBoundingClientRect();
-  const maskotPosition = maskotForside.getBoundingClientRect();
+  const heroPosition = hero.getBoundingClientRect();
   const footerPosition = footer.getBoundingClientRect();
 
   // Hvis 'se alle' eller maskotten er på skærmen vises pilen
-  if ((seAllePosition.top < window.innerHeight && seAllePosition.bottom >= 0) || (maskotPosition.top < window.innerHeight && maskotPosition.bottom >= 0)) {
-    pil.style.opacity = "0.5"; // Pilen er 50% synlig
+  if (heroPosition.top < window.innerHeight && heroPosition.bottom >= 0) {
+    pil.style.opacity = "0"; // Pilen er 50% synlig
   } else {
-    pil.style.opacity = "0"; // Pilen er usynlig hvis ikke 'se alle' eller maskotten er på skærmen
+    pil.style.opacity = "0.5"; // Pilen er usynlig hvis ikke 'se alle' eller maskotten er på skærmen
   }
 
   // Er footeren synlig hæves pilen lidt op for at undgå overlap
