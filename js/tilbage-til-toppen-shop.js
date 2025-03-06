@@ -1,6 +1,6 @@
 "use strict";
 
-//Variabler til pil, 'se alle', maskot og footer
+//Variabler til pil, hero-billede og footer
 const pil = document.querySelector(".pil"); // Finder pil
 const hero = document.querySelector(".hero_shop"); // Finder hero billedet
 const footer = document.querySelector(".footer_overskrift"); // Finder footerens overskrift
@@ -13,11 +13,11 @@ function opdaterPilSynlighed() {
   const heroPosition = hero.getBoundingClientRect();
   const footerPosition = footer.getBoundingClientRect();
 
-  // Hvis 'se alle' eller maskotten er på skærmen vises pilen
+  // Hvis hero-billedet er på skærmen vises pilen ikke
   if (heroPosition.top < window.innerHeight && heroPosition.bottom >= 0) {
     pil.style.opacity = "0"; // Pilen er 50% synlig
   } else {
-    pil.style.opacity = "0.5"; // Pilen er usynlig hvis ikke 'se alle' eller maskotten er på skærmen
+    pil.style.opacity = "0.5"; // Pilen er usynlig hvis hero-billedet er på skærmen
   }
 
   // Er footeren synlig hæves pilen lidt op for at undgå overlap
