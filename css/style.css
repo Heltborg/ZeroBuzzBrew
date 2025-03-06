@@ -108,6 +108,10 @@ a {
   padding-right: 2rem;
 }
 /* ------------------------------------------------ forsiden ------------------------------------------------ */
+.hero_video {
+  width: 100vw; /* -- fylder hele skærmens bredde -- */
+}
+
 .udvalgteOl {
   padding: 2rem 0rem 0rem 3rem; /* -- top, højre, bund, venstre -- */
 }
@@ -326,6 +330,10 @@ a {
   font-size: 0.7rem;
   padding-top: 2rem;
   padding-left: 2rem;
+}
+
+.hero_shop {
+  width: 100vw; /* -- fylder hele bredden -- */
 }
 
 .shop_tekst_sektion {
