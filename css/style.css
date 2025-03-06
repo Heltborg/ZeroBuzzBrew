@@ -213,6 +213,7 @@ a {
   display: block;
   background-color: #cdb5f9;
   color: white;
+  width: 10rem;
   border-radius: 20px;
   padding: 0.7rem 2rem;
   text-align: center;
@@ -226,8 +227,7 @@ a {
 .forside_knap:hover {
   background-color: #875fd0;
   border-radius: 25px;
-  padding: 0.7rem 2rem;
-  font-size: 1.1rem;
+  transform: scale(1.05); /* -- ændrer størrelse uden at skubbe teksten -- */
 }
 
 /* -- styling af billedet -- */
@@ -406,6 +406,8 @@ a {
 .shop_knap {
   padding: 0.6rem 1.2rem;
   background-color: #cdb5f9;
+  width: 7rem;
+  height: auto;
   color: white;
   border: none;
   border-radius: 20px;
