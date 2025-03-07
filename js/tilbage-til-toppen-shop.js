@@ -15,9 +15,9 @@ function opdaterPilSynlighed() {
 
   // Hvis hero-billedet er på skærmen vises pilen ikke
   if (heroPosition.top < window.innerHeight && heroPosition.bottom >= 0) {
-    pil.style.opacity = "0"; // Pilen er 50% synlig
+    pil.style.opacity = "0"; // Pilen er usynlig hvis hero-billedet er på skærmen
   } else {
-    pil.style.opacity = "0.5"; // Pilen er usynlig hvis hero-billedet er på skærmen
+    pil.style.opacity = "0.5"; // Pilen er 50% synlig
   }
 
   // Er footeren synlig hæves pilen lidt op for at undgå overlap
